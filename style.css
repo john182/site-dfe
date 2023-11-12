@@ -23,9 +23,9 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 159;
+  --hue: 24;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color: hsl(var(--hue) 100%, 41%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
@@ -34,7 +34,7 @@ img {
   --body-color: hsl(0 0% 98%);
 
   /* fonts */
-  --title-font-size: 1.875rem;
+  --title-font-size: 1.675rem;
   --subtitle-font-size: 1rem;
 
   --title-font: 'Poppins', sans-serif;
@@ -143,8 +143,8 @@ body {
 
 /*====  LOGO ============================ */
 .logo {
-  font: 700 1.31rem var(--title-font);
-  color: var(--title-color);
+  font: 700 2.25rem var(--title-font);
+  color: #95a5a6;
 }
 
 .logo span {
@@ -664,14 +664,14 @@ footer .social a:hover {
   }
 
   footer .logo {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 }
 /* large devices: 1023 > */
 /* large devices: 992 > */
 @media (min-width: 992px) {
   :root {
-    --title-font-size: 2.25rem;
+    --title-font-size: 2rem;
     --subtitle-font-size: 1.125rem;
   }
 }
