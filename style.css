@@ -104,8 +104,21 @@ body {
   gap: 2rem;
 }
 
+.grid-template-columns-2 {
+	grid-template-columns: 75% 25%;
+}
+
+.grid-template-columns-3 {
+	grid-template-columns: 33.333% 33.333% 33.333%;
+}
+
 .section {
   padding: calc(5rem + var(--header-height)) 0;
+}
+
+.section.banner {
+  min-height: 75vh;
+  background: url(assets/fotos/como-emitir-nota-fiscal-de-servicos.jpg) 65% center / cover;
 }
 
 .section .title {
@@ -135,6 +148,7 @@ body {
   z-index: 100;
   background-color: var(--body-color);
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
 }
 
 #header.scroll {
@@ -282,31 +296,6 @@ nav.show div.icon-close {
 
 #home .container {
   margin: 0;
-}
-
-#home .image {
-  position: relative;
-}
-
-#home .image::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: var(--base-color-second);
-  position: absolute;
-  top: -16.8%;
-  left: 16.7%;
-  z-index: 0;
-}
-
-#home .image img {
-  position: relative;
-  right: 2.93rem;
-}
-
-#home .image img,
-#home .image::before {
-  border-radius: 0.25rem;
 }
 
 #home .text {
@@ -615,9 +604,9 @@ footer .social a:hover {
   }
 
   #home .text {
-    order: 0;
-    max-width: 24rem;
+    order: 0;   
     text-align: left;
+    margin-top: 125px;
   }
 
   /* about */
